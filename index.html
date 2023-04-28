@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BluePac</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  </head>
+  <style>
+ .round-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 80%;
+  border: 2px solid #DDD;
+  border-radius: 10%;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: auto;
+}
+
+.box-content {
+  text-align: center;
+  padding: 30px;
+}
+
+.box-content p, .box-content ul {
+  margin: 10px 0px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.box-content ul {
+  margin-left: 20px;
+}
+
+.box-content li {
+  list-style: disc;
+}
+
+
+
+  </style>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">BluePac</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
+    <div class="jumbotron">
+      <h1 class="display-4">BluePac Consultancy</h1>
+      <p class="lead">We provide customized technology solutions to help your business achieve its full potential.</p>
+      <hr class="my-4">
+      <p>Learn more about our services and how we can help your business thrive in the digital age.</p>
+      <!-- <a class="btn btn-primary btn-lg" href="#" role="button">Learn More</a> -->
+	  <button id="learn-more-btn" class="btn btn-primary">Learn More</button>
+
+    </div>
+<div id="panel" class="round-box" style="display:none">
+  <div class="box-content">
+    <p class="title">About Us</p>
+    <p>Our team of experienced IT consultants specializes in helping businesses of all sizes leverage technology to increase productivity, reduce costs, and improve customer satisfaction. We understand that every business is unique, and we work closely with our clients to understand their specific needs and design solutions that meet their goals.</p>
+    <p>Our services include:</p>
+    <ul>
+      <li>IT strategy development</li>
+      <li>Cloud computing solutions</li>
+      <li>Infrastructure design and implementation</li>
+      <li>Data management and analytics</li>
+      <li>Cybersecurity and compliance</li>
+      <li>Software development</li>
+    </ul>
+    <p>Our website is hosted on Azure Web App, which provides a reliable and scalable platform for our clients to access our services. With Azure Web App, we can easily deploy and manage our website, ensuring that it is always available and secure.</p>
+    <p>Our team is committed to providing excellent customer service and support. We are always available to answer any questions and provide guidance on how to optimize your technology investments.</p>
+    <p>Contact us today to learn how we can help your business thrive in the digital age!</p>
+  </div>
+</div>
+<br/><br/>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h2>IT Strategy Development</h2>
+          <p>We work with our clients to develop IT strategies that align with their business goals.</p>
+        </div>
+        <div class="col-md-4">
+          <h2>Cloud Computing Solutions</h2>
+          <p>We provide customized cloud computing solutions to help our clients reduce costs and increase productivity.</p>
+        </div>
+        <div class="col-md-4">
+          <h2>Software Development</h2>
+          <p>Our team of experienced developers can build custom software solutions to meet our clients' unique needs.</p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function() {
+  $('#learn-more-btn').click(function() {
+    // $('#panel').css('display', 'block');
+    $('#panel').slideToggle(400);
+  });
+});
+</script>
+
+
+
+  </body>
+</html>
